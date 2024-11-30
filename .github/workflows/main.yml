@@ -19,7 +19,7 @@ jobs:
           python-version: '3.10'
 
       - name: Install dependencies
-        run: pip install atproto
+        run: pip install atproto pyyaml
 
       - name: Run Python script
         run: python src/sync.py lhc.yaml ${{ secrets.BSKY_USER }} ${{ secrets.BSKY_PASS }}
