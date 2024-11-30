@@ -6,7 +6,6 @@ from datetime import datetime
 
 def syncList(username, password, repo_did, list_did, handles):
   client = Client()
-  client.login(session_string=session_string)
   client.login(username, password)
 
   list_results = client.app.bsky.graph.get_list(params={"list":list_did})
